@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1872px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1900px) {
+    .wrapper {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+}
+
+body {
+    font-size: 16px;
+    font-family: "Source Serif 4", sans-serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.presentation-container {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.about-me {
+    padding: 150px 0;
+    background-color: #f3f7ea;
+    margin-right: 40px;
+    flex-basis: calc((100% - 40px)/2);
+}
+
+h1 {
+    font-size: 3rem;
+    color: rgb(249, 161, 161);
+}
+
+.my-photo {
+    max-width: 398px;
+    margin: 30px auto;
+}
+
+.my-photo img {
+    width: 100%;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.about-me p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #474747;
+    margin-bottom: 30px;
+}
+
+.about-me a {
+    display: inline-block;
+    transition: all 0.7s;
+}
+
+.about-me a:not(:last-of-type) {
+    margin-right: 40px;
+}
+
+.about-me a i {
+    font-size: 3.125rem;
+    color: #000;
+}
+
+.about-me a:hover {
+    transform: scale(2);
+}
+
+.about-frontend {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc((100% - 40px)/2);
+}
+
+.my-skills {
+    flex-basis: calc((100% - 40px)/2);
+    padding-top: 20px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.my-skills ul li {
+    text-align: left;
+    list-style-type: none;
+    position: relative;
+    margin: 10px;
+    padding-left: 45px;
+    line-height: 64px;
+}
+
+.my-skills ul li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 32px;
+    left: 0px;
+    width: 32px;
+    height: 16px;
+    border-right: 4px solid rgb(246, 109, 109);
+    border-top: 4px solid rgb(246, 109, 109);
+    transform: rotate(135deg);
+}
+
+.reasons-for-frontend {
+    max-width: 600px;
+    font-size: 1.5rem;
+    flex-basis: calc((100% - 40px)/2);
+    margin-top: 40px;
+    text-align: left;
+}
+
+.reasons-for-frontend p::first-letter {
+    color: rgb(246, 109, 109);
+}
+
+.reasons-for-frontend p:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .about-me {
+        padding: 80px 0;
+    }
+    .about-me div {
+        max-width: 265px;
+    }
+    .about-me p {
+        font-size: 1.375rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-me {
+        padding: 70px 0;
+        margin-right: 10px;
+        flex-basis: calc((100% - 10px)/2);
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .about-me div {
+        max-width: 251px;
+        margin-bottom: 20px;
+    }
+    .about-me p {
+        font-size: 1.25rem;
+        margin: 20px 0;
+    }
+    .about-me a i {
+        font-size: 2.5rem;
+    }
+    .about-frontend {
+        font-size: 0.75rem;
+        flex-basis: calc((100% - 10px)/2);
+    }
+    .my-skills ul li {
+        padding-left: 25px;
+        line-height: 20px;
+    }
+    .my-skills ul li::before {
+        bottom: 10px;
+        left: 0px;
+        width: 10px;
+        height: 5px;
+    }
+    .reasons-for-frontend {
+        font-size: 0.75rem;
+    }
+}
